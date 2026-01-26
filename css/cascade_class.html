@@ -1,0 +1,44 @@
+#This is going to be the script for specificity
+#the concept of the targeting the same element is called specificity
+#Suppose an element is targeted by 1.type,2.class,3.id,4.inline
+
+#the element will be influenced by the following order
+    1.inline
+    2.id
+    3.class
+    4.type
+
+    <html lang="en">
+        <head>
+            <title>this is the script for showing specificity & showing pseudoclass</title>
+        </head>
+        <style>
+            h1
+            {
+                color: red;
+            }
+            #id-1
+            {
+                color:aqua;
+            }
+            .class-head
+            {
+                color: blueviolet;
+            }
+            #button-1
+            {
+                color: red;
+                border: black 2px solid;
+                border-radius: 1px;
+                background-color: blue;
+            }
+            #button-1:hover
+            {
+                background-color: black;
+            }
+        </style>
+        <body>
+            <h1 id="id-1" class="class-head">This is the heading</h1>
+            <button id="button-1">Click here </button>
+        </body>
+    </html>
